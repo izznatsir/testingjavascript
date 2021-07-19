@@ -1,0 +1,21 @@
+{
+  "name": "testingjavascript",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "./modules/*"
+  ],
+  "scripts": {
+    "test:1": "yarn workspace fundamentals test",
+    "test:2": "yarn workspace function-mocking test",
+    "test:2:watch": "yarn workspace function-mocking test:watch"
+  },
+  "devDependencies": {
+    "prettier": "2.3.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
